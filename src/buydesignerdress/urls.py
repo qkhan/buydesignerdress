@@ -29,6 +29,7 @@ urlpatterns = [
     path('login/', user_login, name='login'),
     path('logout/', user_logout),
     path('', home_page, name='home'),
+    path('category/', about_page, name='about'),
     path('about/', about_page, name='about'),
     path('contact/', contact_page, name='contact'),
 ]
