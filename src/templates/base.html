@@ -23,12 +23,17 @@
     {% include 'base/top.html' with basename='E-Commerce' %}
     {% include 'base/nav.html' with basename='E-Commerce' %}
   <div id="all">
+    <div id="content">
+
     {% block content %}
     {% endblock %}
 
     {% include 'base/footer.html' with basename='E-Commerce' %}
     {% include 'base/copyright.html' with basename='E-Commerce' %}
+
   </div>
+  <!-- content -->
+</div>
   <!-- /#all -->
     {% include 'base/js.html' %}
 

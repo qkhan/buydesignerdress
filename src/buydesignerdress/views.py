@@ -11,6 +11,13 @@ def home_page(request):
     }
     return render(request, 'home.html', context)
 
+def category_page(request):
+    context = {
+        "title": "Contact Page",
+        "content": "This is content for the Contact page",
+    }
+    return render(request, 'category.html', context)
+
 def about_page(request):
     context = {
         "title": "About Page",
