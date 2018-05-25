@@ -9,7 +9,7 @@ def home_page(request):
         "title": "Hello World!",
         "content": "This is content for the home page"
     }
-    return render(request, 'home.html', context)
+    return render(request, 'index.html', context)
 
 def category_page(request):
     context = {

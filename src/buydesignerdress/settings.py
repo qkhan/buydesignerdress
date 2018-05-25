@@ -39,8 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'widget_tweaks',
     'phonenumber_field',
+    'floppyforms',
+    'crispy_forms',
     'accounts',
     'products',
+    'items',
 ]
 
 MIDDLEWARE = [
