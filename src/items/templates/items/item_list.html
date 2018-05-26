@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Items</h1>
+
+<ul>
+{% for item in object_list %}
+    <li>{{ item.updated|date }} - <a href="{{ item.get_absolute_url }}">{{ item.title }}</a></li>
+{% empty %}
+    <li>No Items yet.</li>
+{% endfor %}
+</ul>
+{% endblock %}
